@@ -1,0 +1,31 @@
+---
+title: "STA426_Exercise1_Ramon_Baur"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#define variables
+
+```{r}
+set.seed(12)
+mu <- 1             #mean
+sigma <- 0.25       #variance
+n <- 100
+```
+
+#sample x
+
+```{r}
+x <- rlnorm(n, mu, sigma)
+```
+
+#histogram
+
+```{r}
+hist(x)
+hist(log(x))
+```
+
